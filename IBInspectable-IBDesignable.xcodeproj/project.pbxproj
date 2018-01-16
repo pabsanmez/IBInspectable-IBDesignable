@@ -14,6 +14,7 @@
 		22FC6431200DFA020077A46E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FC642F200DFA020077A46E /* LaunchScreen.storyboard */; };
 		22FC643C200DFA030077A46E /* IBInspectable_IBDesignableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC643B200DFA030077A46E /* IBInspectable_IBDesignableTests.swift */; };
 		22FC6447200DFA030077A46E /* IBInspectable_IBDesignableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC6446200DFA030077A46E /* IBInspectable_IBDesignableUITests.swift */; };
+		22FC6455200DFA340077A46E /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC6454200DFA340077A46E /* CustomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		22FC6442200DFA030077A46E /* IBInspectable-IBDesignableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "IBInspectable-IBDesignableUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FC6446200DFA030077A46E /* IBInspectable_IBDesignableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBInspectable_IBDesignableUITests.swift; sourceTree = "<group>"; };
 		22FC6448200DFA030077A46E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22FC6454200DFA340077A46E /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				22FC642D200DFA020077A46E /* Assets.xcassets */,
 				22FC642F200DFA020077A46E /* LaunchScreen.storyboard */,
 				22FC6432200DFA020077A46E /* Info.plist */,
+				22FC6454200DFA340077A46E /* CustomView.swift */,
 			);
 			path = "IBInspectable-IBDesignable";
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22FC6455200DFA340077A46E /* CustomView.swift in Sources */,
 				22FC6429200DFA020077A46E /* ViewController.swift in Sources */,
 				22FC6427200DFA020077A46E /* AppDelegate.swift in Sources */,
 			);
