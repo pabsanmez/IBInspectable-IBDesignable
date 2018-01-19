@@ -12,45 +12,29 @@ import UIKit
 @IBDesignable class CustomView: UIView {
   
   
-// var cornerRadiusa: CGFloat = 0 {
-//    didSet {
-//      self.layer.cornerRadius = cornerRadiusa
-//    }
-//  }
-  
-  override var backgroundColor: UIColor? {
-      didSet {
-        //self.layer.backgroundColor = backgroundColor?.cgColor
-      }
+ @IBInspectable
+  var cornerRadius: CGFloat = 0 {
+    didSet {
+      self.layer.cornerRadius = cornerRadius
+    }
   }
   
   override init(frame: CGRect) {
-    // 1. setup any properties here
-    // 2. call super.init(frame:)
-
-    //Aqui lo que se ve
+    //What we see in the IB
     super.init(frame: frame)
     self.layer.backgroundColor = UIColor.green.cgColor
-    backgroundColor = UIColor.red
-    self.layer.cornerRadius = 200
-    
-
-    // 3. Setup view from .xib file
-    //xibSetup()
+    self.layer.cornerRadius = 20
   }
   
   override func prepareForInterfaceBuilder() {
     super.prepareForInterfaceBuilder()
     backgroundColor = UIColor.gray
-    
   }
   
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    backgroundColor = UIColor.yellow
-
     self.layer.cornerRadius = 100
-
+    backgroundColor = UIColor.yellow
   }
   
   
