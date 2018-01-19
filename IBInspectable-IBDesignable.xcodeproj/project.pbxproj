@@ -10,9 +10,9 @@
 		225204D72010ED53005885CF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225204D62010ED53005885CF /* CardView.swift */; };
 		225204D92010ED67005885CF /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225204D82010ED67005885CF /* CardView.xib */; };
 		225204DB2010F5C9005885CF /* CardViewImplement.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225204DA2010F5C9005885CF /* CardViewImplement.xib */; };
-		22F78D6E2011D9E200D0CE69 /* XibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78D6D2011D9E200D0CE69 /* XibView.swift */; };
+		228C853C201221E10046FC15 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228C853B201221E10046FC15 /* CustomView.xib */; };
+		22F78D6E2011D9E200D0CE69 /* XibViewLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78D6D2011D9E200D0CE69 /* XibViewLoad.swift */; };
 		22FC6427200DFA020077A46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC6426200DFA020077A46E /* AppDelegate.swift */; };
-		22FC6429200DFA020077A46E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC6428200DFA020077A46E /* ViewController.swift */; };
 		22FC642C200DFA020077A46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FC642A200DFA020077A46E /* Main.storyboard */; };
 		22FC642E200DFA020077A46E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22FC642D200DFA020077A46E /* Assets.xcassets */; };
 		22FC6431200DFA020077A46E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FC642F200DFA020077A46E /* LaunchScreen.storyboard */; };
@@ -42,10 +42,10 @@
 		225204D62010ED53005885CF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		225204D82010ED67005885CF /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		225204DA2010F5C9005885CF /* CardViewImplement.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewImplement.xib; sourceTree = "<group>"; };
-		22F78D6D2011D9E200D0CE69 /* XibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibView.swift; sourceTree = "<group>"; };
+		228C853B201221E10046FC15 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
+		22F78D6D2011D9E200D0CE69 /* XibViewLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewLoad.swift; sourceTree = "<group>"; };
 		22FC6423200DFA020077A46E /* IBInspectable-IBDesignable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBInspectable-IBDesignable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FC6426200DFA020077A46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		22FC6428200DFA020077A46E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		22FC642B200DFA020077A46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		22FC642D200DFA020077A46E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22FC6430200DFA020077A46E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -84,12 +84,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		22F78D6C2011D9C800D0CE69 /* Utils */ = {
+		228C853A201221860046FC15 /* ChangesViewInXib */ = {
 			isa = PBXGroup;
 			children = (
-				22F78D6D2011D9E200D0CE69 /* XibView.swift */,
+				22FC6454200DFA340077A46E /* CustomView.swift */,
+				228C853B201221E10046FC15 /* CustomView.xib */,
 			);
-			path = Utils;
+			path = ChangesViewInXib;
+			sourceTree = "<group>";
+		};
+		229001DF20122092005B547A /* ReusableCustomView */ = {
+			isa = PBXGroup;
+			children = (
+				225204D62010ED53005885CF /* CardView.swift */,
+				225204D82010ED67005885CF /* CardView.xib */,
+			);
+			path = ReusableCustomView;
+			sourceTree = "<group>";
+		};
+		22F78D6C2011D9C800D0CE69 /* XibViewLoad */ = {
+			isa = PBXGroup;
+			children = (
+				22F78D6D2011D9E200D0CE69 /* XibViewLoad.swift */,
+			);
+			path = XibViewLoad;
 			sourceTree = "<group>";
 		};
 		22FC641A200DFA020077A46E = {
@@ -115,16 +133,14 @@
 		22FC6425200DFA020077A46E /* IBInspectable-IBDesignable */ = {
 			isa = PBXGroup;
 			children = (
-				22F78D6C2011D9C800D0CE69 /* Utils */,
+				228C853A201221860046FC15 /* ChangesViewInXib */,
+				229001DF20122092005B547A /* ReusableCustomView */,
+				22F78D6C2011D9C800D0CE69 /* XibViewLoad */,
 				22FC6426200DFA020077A46E /* AppDelegate.swift */,
-				22FC6428200DFA020077A46E /* ViewController.swift */,
 				22FC642A200DFA020077A46E /* Main.storyboard */,
 				22FC642D200DFA020077A46E /* Assets.xcassets */,
 				22FC642F200DFA020077A46E /* LaunchScreen.storyboard */,
 				22FC6432200DFA020077A46E /* Info.plist */,
-				22FC6454200DFA340077A46E /* CustomView.swift */,
-				225204D62010ED53005885CF /* CardView.swift */,
-				225204D82010ED67005885CF /* CardView.xib */,
 				225204DA2010F5C9005885CF /* CardViewImplement.xib */,
 			);
 			path = "IBInspectable-IBDesignable";
@@ -260,6 +276,7 @@
 				225204D92010ED67005885CF /* CardView.xib in Resources */,
 				225204DB2010F5C9005885CF /* CardViewImplement.xib in Resources */,
 				22FC642C200DFA020077A46E /* Main.storyboard in Resources */,
+				228C853C201221E10046FC15 /* CustomView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,9 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				22FC6455200DFA340077A46E /* CustomView.swift in Sources */,
-				22FC6429200DFA020077A46E /* ViewController.swift in Sources */,
 				225204D72010ED53005885CF /* CardView.swift in Sources */,
-				22F78D6E2011D9E200D0CE69 /* XibView.swift in Sources */,
+				22F78D6E2011D9E200D0CE69 /* XibViewLoad.swift in Sources */,
 				22FC6427200DFA020077A46E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

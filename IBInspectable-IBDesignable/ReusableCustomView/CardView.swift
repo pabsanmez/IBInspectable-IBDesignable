@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable class CardView: UIView {
+@IBDesignable class CardView: UIView, returnView {
   
   // Our custom view from the XIB file
   var view: UIView!
@@ -71,6 +71,15 @@ import UIKit
     let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
     return view
   }
+  
+  func getView() -> UIView {
+    return view
+  }
+  
+}
+
+protocol returnView {
+  func getView() -> UIView
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  XibView.swift
+//  XibViewLoad.swift
 //  IBInspectable-IBDesignable
 //
 //  Created by Pablo Sanchez Gomez on 19/1/18.
@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 @IBDesignable
-class XibView : UIView {
+class XibViewLoad : UIView {
   
   var contentView: UIView?
   @IBInspectable var nibName: String?
