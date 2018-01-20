@@ -16,7 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
+    loadCorrespondingLayout()
     return true
+  }
+  
+  fileprivate func loadCorrespondingLayout() {
+    self.window = UIWindow(frame: UIScreen.main.bounds)
+    self.window?.rootViewController = MainViewController()
+    self.window?.makeKeyAndVisible()
   }
 
   func applicationWillResignActive(_ application: UIApplication) {

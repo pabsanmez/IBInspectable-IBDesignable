@@ -20,18 +20,18 @@ class XibViewLoad : UIView {
     xibSetup()
   }
   
+  override func prepareForInterfaceBuilder() {
+    super.prepareForInterfaceBuilder()
+    xibSetup()
+    //contentView?.prepareForInterfaceBuilder()
+  }
+  
   func xibSetup() {
     guard let view = loadViewFromNib() else { return }
     view.frame = bounds
     view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
     addSubview(view)
     contentView = view
-  }
-  
-  override func prepareForInterfaceBuilder() {
-    super.prepareForInterfaceBuilder()
-    xibSetup()
-    contentView?.prepareForInterfaceBuilder()
   }
   
   func loadViewFromNib() -> UIView? {
