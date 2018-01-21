@@ -35,7 +35,13 @@ class CustomView: UIView {
   }
 
   func xibSetup(){
-    backgroundColor = UIColor.yellow
+    //backgroundColor = UIColor.yellow
+    self.layer.shadowColor = Utils.hexStringToUIColor(hex: "#CACACA").cgColor
+    self.layer.borderWidth = 1.0
+    self.layer.borderColor = Utils.hexStringToUIColor(hex: "#E6E9EC").cgColor
+    self.layer.shadowOffset = CGSize(width: CGFloat(1.0), height: CGFloat(1.0))
+    self.layer.masksToBounds = false
+    self.layer.shadowOpacity = Float(0.8)    
   }
 }
 

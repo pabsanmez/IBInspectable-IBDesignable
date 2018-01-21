@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReusableCardView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
+            <connections>
+                <outlet property="imgProfile" destination="fBX-BV-kRi" id="h7z-pP-5yP"/>
+                <outlet property="lblJob" destination="rHu-6M-eED" id="HjH-or-fat"/>
+                <outlet property="lblLocation" destination="nVw-bu-xY8" id="sNQ-IF-hXw"/>
+                <outlet property="lblname" destination="s2J-6I-bYs" id="Bki-vS-3st"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nly-rR-iuL" customClass="CustomView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="-0.5" width="320" height="123"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fBX-BV-kRi">
+                            <rect key="frame" x="8" y="12.5" width="98" height="98"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="fBX-BV-kRi" secondAttribute="height" multiplier="1:1" id="WNZ-gL-1Gp"/>
+                            </constraints>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="AtO-hf-GeH">
+                            <rect key="frame" x="114" y="0.0" width="198" height="123.5"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pablo Sánchez Gómez" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2J-6I-bYs">
+                                    <rect key="frame" x="0.0" y="0.0" width="198" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Programador iOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rHu-6M-eED">
+                                    <rect key="frame" x="0.0" y="41" width="198" height="41.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Barcelona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVw-bu-xY8">
+                                    <rect key="frame" x="0.0" y="82.5" width="198" height="41"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="AtO-hf-GeH" firstAttribute="centerY" secondItem="Nly-rR-iuL" secondAttribute="centerY" id="5Uq-Yn-Q6y"/>
+                        <constraint firstAttribute="trailing" secondItem="AtO-hf-GeH" secondAttribute="trailing" constant="8" id="6Im-NB-6F9"/>
+                        <constraint firstItem="fBX-BV-kRi" firstAttribute="leading" secondItem="Nly-rR-iuL" secondAttribute="leading" constant="8" id="ABP-Vo-3VA"/>
+                        <constraint firstItem="fBX-BV-kRi" firstAttribute="height" secondItem="Nly-rR-iuL" secondAttribute="height" multiplier="0.8" id="BQQ-U2-alN"/>
+                        <constraint firstItem="fBX-BV-kRi" firstAttribute="centerY" secondItem="Nly-rR-iuL" secondAttribute="centerY" id="Y7c-KE-zHW"/>
+                        <constraint firstItem="AtO-hf-GeH" firstAttribute="height" secondItem="Nly-rR-iuL" secondAttribute="height" id="bJp-lG-sD1"/>
+                        <constraint firstItem="AtO-hf-GeH" firstAttribute="leading" secondItem="fBX-BV-kRi" secondAttribute="trailing" constant="8" id="yfZ-77-9DF"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Nly-rR-iuL" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Crg-yO-RN6"/>
+                <constraint firstItem="Nly-rR-iuL" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="KeR-9W-ApK"/>
+                <constraint firstItem="Nly-rR-iuL" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="qN4-Yj-7Ss"/>
+                <constraint firstItem="Nly-rR-iuL" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="yKL-S2-5hW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="name" value="hola"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="-20" y="-406"/>
+        </view>
+    </objects>
+</document>

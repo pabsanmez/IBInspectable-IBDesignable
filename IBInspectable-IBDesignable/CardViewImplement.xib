@@ -15,8 +15,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-st-8UA" customClass="CardView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
-                    <rect key="frame" x="16" y="187" width="351" height="72"/>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-st-8UA" customClass="ReusableCardView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
+                    <rect key="frame" x="16" y="187" width="343" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <userDefinedRuntimeAttributes>
@@ -25,6 +25,9 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="job" value="Que tal"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="location" value="Bien"/>
                         <userDefinedRuntimeAttribute type="image" keyPath="profilePicture" value="pablo"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="imgCornerRadius">
+                            <real key="value" value="40"/>
+                        </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>

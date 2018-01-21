@@ -1,5 +1,5 @@
 //
-//  CardView.swift
+//  ReusableCardView.swift
 //  IBInspectable-IBDesignable
 //
 //  Created by Pablo Sanchez Gomez on 18/1/18.
@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-@IBDesignable class CardView: UIView {
+@IBDesignable class ReusableCardView: UIView, LoadViewProtocol {
   
   // Our custom view from the XIB file
   var view: UIView!
@@ -24,6 +24,12 @@ import UIKit
   @IBInspectable var profilePicture: UIImage? {
     didSet {
       imgProfile.image = profilePicture
+    }
+  }
+  
+  @IBInspectable var imgCornerRadius: CGFloat = 0 {
+    didSet {
+      imgProfile.layer.cornerRadius = imgCornerRadius
     }
   }
   
@@ -45,6 +51,7 @@ import UIKit
     }
   }
   
+  // Initializers.
   override init(frame: CGRect) {
     super.init(frame: frame)
     xibSetup()
@@ -56,18 +63,12 @@ import UIKit
   }
   
   func xibSetup() {
-    view = loadViewFromNib()
-    view.frame = bounds
-    view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
-    addSubview(view)
-  }
-  
-  func loadViewFromNib() -> UIView {
-    let bundle = Bundle(for: type(of:self))
-    let nib = UINib(nibName: "CardView", bundle: bundle)
-    // Assumes UIView is top level and only object in CustomView.xib file
-    let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
-    return view
+    //self.imgCornerRadius = 100
+    if let view = loadView("ReusableCardView") {
+      view.frame = bounds
+      view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
+      addSubview(view)
+    }
   }
 }
 
