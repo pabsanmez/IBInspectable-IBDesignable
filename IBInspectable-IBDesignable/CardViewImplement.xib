@@ -26,7 +26,7 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="location" value="Bien"/>
                         <userDefinedRuntimeAttribute type="image" keyPath="profilePicture" value="pablo"/>
                         <userDefinedRuntimeAttribute type="number" keyPath="imgCornerRadius">
-                            <real key="value" value="40"/>
+                            <real key="value" value="90"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                 </view>

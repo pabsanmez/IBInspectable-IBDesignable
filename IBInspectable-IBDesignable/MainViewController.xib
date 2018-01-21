@@ -5,6 +5,7 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -27,34 +28,34 @@
                         <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="SUP"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Hy-Fj-Yk1" customClass="CustomView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
-                    <rect key="frame" x="-0.5" y="10" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8xr-lc-dtB" customClass="ReusableCardView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
+                    <rect key="frame" x="56.5" y="243.5" width="262.5" height="200"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                            <real key="value" value="300"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="profilePicture" value="pablo"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="imgCornerRadius">
+                            <real key="value" value="80"/>
                         </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Pablo"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="job" value="Prog"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="location" value="Barna"/>
                     </userDefinedRuntimeAttributes>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgL-d9-hMO" customClass="CustomButton" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
-                    <rect key="frame" x="164" y="328.5" width="46" height="30"/>
-                    <state key="normal" title="Button"/>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="DgL-d9-hMO" firstAttribute="centerY" secondItem="3Hy-Fj-Yk1" secondAttribute="centerY" id="CFG-d9-MIF"/>
-                <constraint firstItem="3Hy-Fj-Yk1" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Fjq-uh-XXD"/>
+                <constraint firstItem="8xr-lc-dtB" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.3" id="OQC-ri-wY5"/>
                 <constraint firstItem="tjS-WK-VXm" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="URJ-dP-h6L"/>
-                <constraint firstItem="3Hy-Fj-Yk1" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="XKc-vi-cEV"/>
-                <constraint firstItem="DgL-d9-hMO" firstAttribute="centerX" secondItem="3Hy-Fj-Yk1" secondAttribute="centerX" id="Ydo-iu-NpJ"/>
-                <constraint firstItem="3Hy-Fj-Yk1" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="aqK-2c-TG9"/>
+                <constraint firstItem="8xr-lc-dtB" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.7" id="VuB-bg-zgi"/>
                 <constraint firstItem="tjS-WK-VXm" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="bpe-wP-rXM"/>
-                <constraint firstItem="3Hy-Fj-Yk1" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" id="jV5-uH-dvj"/>
+                <constraint firstItem="8xr-lc-dtB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="kKR-K0-znE"/>
                 <constraint firstItem="tjS-WK-VXm" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="nOz-Bu-JSe"/>
                 <constraint firstItem="tjS-WK-VXm" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="npc-lP-Bl1"/>
+                <constraint firstItem="8xr-lc-dtB" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="rpN-Se-v2D"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>
     </objects>
+    <resources>
+        <image name="pablo" width="204" height="177"/>
+    </resources>
 </document>

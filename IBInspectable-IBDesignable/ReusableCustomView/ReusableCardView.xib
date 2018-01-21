@@ -27,7 +27,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nly-rR-iuL" customClass="CustomView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="-0.5" width="320" height="123"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fBX-BV-kRi">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fBX-BV-kRi">
                             <rect key="frame" x="8" y="12.5" width="98" height="98"/>
                             <constraints>
                                 <constraint firstAttribute="width" secondItem="fBX-BV-kRi" secondAttribute="height" multiplier="1:1" id="WNZ-gL-1Gp"/>
@@ -74,7 +74,6 @@
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="Nly-rR-iuL" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="Crg-yO-RN6"/>
                 <constraint firstItem="Nly-rR-iuL" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="KeR-9W-ApK"/>

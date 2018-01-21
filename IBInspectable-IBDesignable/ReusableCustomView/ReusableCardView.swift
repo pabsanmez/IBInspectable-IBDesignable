@@ -63,7 +63,6 @@ import UIKit
   }
   
   func xibSetup() {
-    //self.imgCornerRadius = 100
     if let view = loadView("ReusableCardView") {
       view.frame = bounds
       view.autoresizingMask = [UIViewAutoresizing.flexibleWidth, UIViewAutoresizing.flexibleHeight]
