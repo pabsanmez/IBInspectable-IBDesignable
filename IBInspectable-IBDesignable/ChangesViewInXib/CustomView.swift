@@ -20,24 +20,23 @@ class CustomView: UIView {
   }
   
   override init(frame: CGRect) {
-    //What we see in the IB
     super.init(frame: frame)
-    self.layer.backgroundColor = UIColor.green.cgColor
-    self.layer.cornerRadius = 20
-  }
-  
-  override func prepareForInterfaceBuilder() {
-    super.prepareForInterfaceBuilder()
-    backgroundColor = UIColor.gray
+    xibSetup()
   }
   
   public required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
-    self.layer.cornerRadius = 100
-    backgroundColor = UIColor.yellow
+    xibSetup()
   }
   
-  
+  override func prepareForInterfaceBuilder() {
+    super.prepareForInterfaceBuilder()
+    xibSetup()
+  }
+
+  func xibSetup(){
+    backgroundColor = UIColor.yellow
+  }
 }
 
 @IBDesignable class CustomButton: UIButton {
@@ -47,8 +46,24 @@ class CustomView: UIView {
       self.setTitleColor(newColor, for: .normal)
     }
   }
-  override func draw(_ rect: CGRect) {
-    newColor = UIColor.red
+  
+  override init(frame: CGRect) {
+    super.init(frame: frame)
+    xibSetup()
   }
-
+  
+  public required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+    xibSetup()
+  }
+  
+  override func prepareForInterfaceBuilder() {
+    super.prepareForInterfaceBuilder()
+    xibSetup()
+  }
+  
+  func xibSetup() {
+    self.backgroundColor = UIColor.blue
+    self.layer.cornerRadius = 10
+  }
 }

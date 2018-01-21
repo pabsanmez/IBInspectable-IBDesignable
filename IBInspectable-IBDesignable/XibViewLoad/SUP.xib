@@ -28,6 +28,11 @@
                 <constraint firstItem="BLp-nm-5rD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SZc-GL-niu"/>
                 <constraint firstItem="BLp-nm-5rD" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="bAa-so-3Kb"/>
             </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="100"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="apo" destination="BLp-nm-5rD" id="0eE-wE-8UC"/>
             </connections>

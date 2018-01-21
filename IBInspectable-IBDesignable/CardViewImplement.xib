@@ -16,17 +16,24 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BfJ-st-8UA" customClass="CardView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
-                    <rect key="frame" x="58" y="187" width="240" height="128"/>
+                    <rect key="frame" x="16" y="187" width="351" height="72"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <userDefinedRuntimeAttributes>
-                        <userDefinedRuntimeAttribute type="string" keyPath="text" value="aaaaSUSUS"/>
                         <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="CardView"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="name" value="Hola"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="job" value="Que tal"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="location" value="Bien"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="profilePicture" value="pablo"/>
                     </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="pablo" width="204" height="177"/>
+    </resources>
 </document>

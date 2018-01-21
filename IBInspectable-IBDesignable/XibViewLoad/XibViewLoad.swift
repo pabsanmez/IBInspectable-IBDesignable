@@ -23,7 +23,6 @@ class XibViewLoad : UIView {
   override func prepareForInterfaceBuilder() {
     super.prepareForInterfaceBuilder()
     xibSetup()
-    //contentView?.prepareForInterfaceBuilder()
   }
   
   func xibSetup() {

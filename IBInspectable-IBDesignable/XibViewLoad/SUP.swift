@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+@IBDesignable
 class SUP: UIView {
     
   @IBOutlet weak var apo: UIButton!
@@ -17,22 +17,20 @@ class SUP: UIView {
     print("suuu")
   }
   
+  @IBInspectable
+  var cornerRadius: CGFloat = 0 {
+    didSet {
+      self.layer.cornerRadius = cornerRadius
+      if apo != nil {
+        apo.setTitle("mememe", for: .normal)
+
+      }
+    }
+  }
+  
   override func awakeFromNib() {
     apo.setTitle("LOLACO", for: .normal)
+    let meh = cornerRadius
+    cornerRadius = meh
   }
-  
-  /*override init(frame: CGRect) {
-    //What we see in the IB
-    super.init(frame: frame)
-  }
-  
-  public required init?(coder aDecoder: NSCoder) {
-    super.init(coder: aDecoder)
-  }
-  
-  override func prepareForInterfaceBuilder() {
-    super.prepareForInterfaceBuilder()
-  }*/
-
-
 }

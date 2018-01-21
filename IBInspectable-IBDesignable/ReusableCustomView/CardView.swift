@@ -9,52 +9,50 @@
 import Foundation
 import UIKit
 
-@IBDesignable class CardView: UIView, returnView {
+@IBDesignable class CardView: UIView {
   
   // Our custom view from the XIB file
   var view: UIView!
   
   // Outlets
+  @IBOutlet weak var imgProfile: UIImageView!
+  @IBOutlet weak var lblname: UILabel!
+  @IBOutlet weak var lblJob: UILabel!
+  @IBOutlet weak var lblLocation: UILabel!
   
-  @IBOutlet weak var label: UILabel!
-  //@IBOutlet weak var label: UILabel!
-  /*@IBOutlet weak var imageView: UIImageView!
-  @IBOutlet weak var button: UIButton!
-  
-  @IBAction func buttonPressed(_ sender: Any) {
-    print("Pressed button!")
+  // Inspectables.
+  @IBInspectable var profilePicture: UIImage? {
+    didSet {
+      imgProfile.image = profilePicture
+    }
   }
   
-  @IBInspectable var image: UIImage? {
+  @IBInspectable var name: String? {
     didSet {
-      imageView.image = image
+      lblname.text = name
     }
-  }*/
-  @IBInspectable var text: String? {
+  }
+  
+  @IBInspectable var job: String? {
     didSet {
-      label.text = text
+      lblJob.text = job
+    }
+  }
+  
+  @IBInspectable var location: String? {
+    didSet {
+      lblLocation.text = location
     }
   }
   
   override init(frame: CGRect) {
-    // 1. setup any properties here
-    
-    // 2. call super.init(frame:)
     super.init(frame: frame)
-    
-    // 3. Setup view from .xib file
     xibSetup()
   }
   
   required init?(coder aDecoder: NSCoder) {
-    // 1. setup any properties here
-    
-    // 2. call super.init(coder:)
     super.init(coder: aDecoder)
-    
-    // 3. Setup view from .xib file
     xibSetup()
-    //        self.view = loadViewFromNib() as! CustomView
   }
   
   func xibSetup() {
@@ -71,15 +69,6 @@ import UIKit
     let view = nib.instantiate(withOwner: self, options: nil)[0] as! UIView
     return view
   }
-  
-  func getView() -> UIView {
-    return view
-  }
-  
-}
-
-protocol returnView {
-  func getView() -> UIView
 }
 
 
