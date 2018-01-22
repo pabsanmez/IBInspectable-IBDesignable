@@ -11,31 +11,51 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReusableButtonStackView" customModule="IBInspectable_IBDesignable" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLp-nm-5rD">
-                    <rect key="frame" x="-0.5" y="318.5" width="375" height="30"/>
-                    <state key="normal" title="HOLA"/>
-                    <connections>
-                        <action selector="SUUUUUU:" destination="iN0-l3-epB" eventType="touchUpInside" id="rnh-g3-9OK"/>
-                    </connections>
-                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-3Z-c90">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyT-Gy-9td">
+                            <rect key="frame" x="0.0" y="0.0" width="125" height="85"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-XA-dbt">
+                            <rect key="frame" x="125" y="0.0" width="125" height="85"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqX-Xd-reC">
+                            <rect key="frame" x="250" y="0.0" width="125" height="85"/>
+                            <state key="normal" title="Button"/>
+                        </button>
+                    </subviews>
+                </stackView>
             </subviews>
-            <color key="backgroundColor" red="0.70196078429999997" green="0.50645184519999997" blue="0.17254901959999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="BLp-nm-5rD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8Rb-S4-4PE"/>
-                <constraint firstItem="BLp-nm-5rD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SZc-GL-niu"/>
-                <constraint firstItem="BLp-nm-5rD" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="bAa-so-3Kb"/>
+                <constraint firstItem="EyV-3Z-c90" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HKb-4r-cjg"/>
+                <constraint firstItem="EyV-3Z-c90" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="Qal-bf-bia"/>
+                <constraint firstItem="EyV-3Z-c90" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="YA4-51-qfa"/>
+                <constraint firstItem="EyV-3Z-c90" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="qcM-76-Uiy"/>
             </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                    <real key="value" value="100"/>
+                <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorButton">
+                    <color key="value" red="0.94901960780000005" green="0.2901960784" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusButtons">
+                    <real key="value" value="10"/>
                 </userDefinedRuntimeAttribute>
             </userDefinedRuntimeAttributes>
             <connections>
-                <outlet property="apo" destination="BLp-nm-5rD" id="0eE-wE-8UC"/>
+                <outlet property="btn1" destination="dyT-Gy-9td" id="DS7-AN-pLc"/>
+                <outlet property="btn2" destination="DgE-XA-dbt" id="rXT-eQ-8no"/>
+                <outlet property="btn3" destination="vqX-Xd-reC" id="2Qj-dy-DPT"/>
             </connections>
+            <point key="canvasLocation" x="2.5" y="39.5"/>
         </view>
     </objects>
 </document>

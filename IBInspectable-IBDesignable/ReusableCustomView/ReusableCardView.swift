@@ -62,6 +62,11 @@ import UIKit
     xibSetup()
   }
   
+  /*override func prepareForInterfaceBuilder() {
+    super.prepareForInterfaceBuilder()
+    xibSetup()
+  }*/
+  
   func xibSetup() {
     if let view = loadView("ReusableCardView") {
       view.frame = bounds
