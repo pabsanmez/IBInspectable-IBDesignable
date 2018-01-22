@@ -14,14 +14,20 @@ class ReusableButtonStackView: UIView,LoadViewProtocol {
   @IBOutlet weak var btn1: UIButton!
   @IBOutlet weak var btn2: UIButton!
   @IBOutlet weak var btn3: UIButton!
-  /*@IBOutlet weak var apo: UIButton!
   
-   @IBOutlet weak var btn2: UIButton!
-   @IBOutlet weak var btn1: UIButton!
-   @IBAction func SUUUUUU(_ sender: Any) {
-   @IBOutlet weak var btn3: UIButton!
-   print("suuu")
-  }*/
+  @IBAction func btnClicked(_ sender: UIButton) {
+    switch sender.tag {
+    case 0:
+      print("Clicked: Button 1")
+    case 1:
+      print("Clicked: Button 2")
+    case 2:
+      print("Clicked: Button 3")
+    default:
+      print ("Unkown")
+    }
+  }
+
   
   @IBInspectable
   var cornerRadiusButtons: CGFloat = 0 {

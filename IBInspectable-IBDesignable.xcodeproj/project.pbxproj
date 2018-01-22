@@ -160,8 +160,8 @@
 		22FC6425200DFA020077A46E /* IBInspectable-IBDesignable */ = {
 			isa = PBXGroup;
 			children = (
-				22D68AD52015D65A0080EB3E /* ReusableButtonStack */,
 				2235F45B2014BA2E0061CBB9 /* Protocols */,
+				22D68AD52015D65A0080EB3E /* ReusableButtonStack */,
 				228C853A201221860046FC15 /* ChangesViewInXib */,
 				229001DF20122092005B547A /* ReusableCustomView */,
 				22F78D6C2011D9C800D0CE69 /* XibViewLoad */,

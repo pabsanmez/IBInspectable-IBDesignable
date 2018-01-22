@@ -14,20 +14,35 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-3Z-c90">
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="EyV-3Z-c90">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyT-Gy-9td">
-                            <rect key="frame" x="0.0" y="0.0" width="125" height="85"/>
-                            <state key="normal" title="Button"/>
+                            <rect key="frame" x="0.0" y="0.0" width="111.5" height="85"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="uJO-5f-1TR"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-XA-dbt">
-                            <rect key="frame" x="125" y="0.0" width="125" height="85"/>
-                            <state key="normal" title="Button"/>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-XA-dbt">
+                            <rect key="frame" x="131.5" y="0.0" width="112" height="85"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="lgT-Gb-CWb"/>
+                            </connections>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqX-Xd-reC">
-                            <rect key="frame" x="250" y="0.0" width="125" height="85"/>
-                            <state key="normal" title="Button"/>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vqX-Xd-reC">
+                            <rect key="frame" x="263.5" y="0.0" width="111.5" height="85"/>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="bbh-jD-Rrp"/>
+                            </connections>
                         </button>
                     </subviews>
                 </stackView>
@@ -44,7 +59,7 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <userDefinedRuntimeAttributes>
                 <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorButton">
-                    <color key="value" red="0.94901960780000005" green="0.2901960784" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 </userDefinedRuntimeAttribute>
                 <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusButtons">
                     <real key="value" value="10"/>
