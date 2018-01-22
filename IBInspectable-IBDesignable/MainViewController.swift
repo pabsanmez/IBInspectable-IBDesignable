@@ -10,12 +10,12 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-  @IBOutlet weak var SUP: XibViewLoad!
+  @IBOutlet weak var viewButtonStack: XibViewLoad!
   
   
   override func viewDidLoad() {
         super.viewDidLoad()
-    if let meh = SUP.contentView as? SUP {
+    if let contentViewButtonStack = viewButtonStack.contentView as? ReusableButtonStackView {
      // meh.apo.setTitle("CACA", for: .normal)
 
     }

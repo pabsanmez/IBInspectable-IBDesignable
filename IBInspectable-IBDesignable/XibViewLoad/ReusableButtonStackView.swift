@@ -1,5 +1,5 @@
 //
-//  SUP.swift
+//  ReusableButtonStackView.swift
 //  IBInspectable-IBDesignable
 //
 //  Created by Pablo Sánchez Gómez on 20/1/18.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class SUP: UIView {
+class ReusableButtonStackView: UIView {
     
   @IBOutlet weak var apo: UIButton!
   

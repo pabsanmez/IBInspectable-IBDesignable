@@ -11,12 +11,11 @@
 		2235F45F2014C3390061CBB9 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2235F45E2014C3390061CBB9 /* Utils.swift */; };
 		225204D72010ED53005885CF /* ReusableCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225204D62010ED53005885CF /* ReusableCardView.swift */; };
 		225204D92010ED67005885CF /* ReusableCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225204D82010ED67005885CF /* ReusableCardView.xib */; };
-		225204DB2010F5C9005885CF /* CardViewImplement.xib in Resources */ = {isa = PBXBuildFile; fileRef = 225204DA2010F5C9005885CF /* CardViewImplement.xib */; };
 		228C853C201221E10046FC15 /* CustomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228C853B201221E10046FC15 /* CustomView.xib */; };
-		22D017EB2013ED2D004A95CE /* SUP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D017EA2013ED2D004A95CE /* SUP.swift */; };
-		22D017ED2013ED38004A95CE /* SUP.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D017EC2013ED38004A95CE /* SUP.xib */; };
 		22D017F12013FFE0004A95CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D017EF2013FFE0004A95CE /* MainViewController.swift */; };
 		22D017F22013FFE0004A95CE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D017F02013FFE0004A95CE /* MainViewController.xib */; };
+		22D68AD82015DF9C0080EB3E /* ReusableButtonStackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22D68AD62015DF9C0080EB3E /* ReusableButtonStackView.xib */; };
+		22D68AD92015DF9C0080EB3E /* ReusableButtonStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D68AD72015DF9C0080EB3E /* ReusableButtonStackView.swift */; };
 		22F78D6E2011D9E200D0CE69 /* XibViewLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F78D6D2011D9E200D0CE69 /* XibViewLoad.swift */; };
 		22FC6427200DFA020077A46E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FC6426200DFA020077A46E /* AppDelegate.swift */; };
 		22FC642C200DFA020077A46E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22FC642A200DFA020077A46E /* Main.storyboard */; };
@@ -49,12 +48,11 @@
 		2235F45E2014C3390061CBB9 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		225204D62010ED53005885CF /* ReusableCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCardView.swift; sourceTree = "<group>"; };
 		225204D82010ED67005885CF /* ReusableCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReusableCardView.xib; sourceTree = "<group>"; };
-		225204DA2010F5C9005885CF /* CardViewImplement.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewImplement.xib; sourceTree = "<group>"; };
 		228C853B201221E10046FC15 /* CustomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomView.xib; sourceTree = "<group>"; };
-		22D017EA2013ED2D004A95CE /* SUP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SUP.swift; sourceTree = "<group>"; };
-		22D017EC2013ED38004A95CE /* SUP.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SUP.xib; sourceTree = "<group>"; };
 		22D017EF2013FFE0004A95CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		22D017F02013FFE0004A95CE /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		22D68AD62015DF9C0080EB3E /* ReusableButtonStackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ReusableButtonStackView.xib; path = "IBInspectable-IBDesignable/XibViewLoad/ReusableButtonStackView.xib"; sourceTree = SOURCE_ROOT; };
+		22D68AD72015DF9C0080EB3E /* ReusableButtonStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReusableButtonStackView.swift; path = "IBInspectable-IBDesignable/XibViewLoad/ReusableButtonStackView.swift"; sourceTree = SOURCE_ROOT; };
 		22F78D6D2011D9E200D0CE69 /* XibViewLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XibViewLoad.swift; sourceTree = "<group>"; };
 		22FC6423200DFA020077A46E /* IBInspectable-IBDesignable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IBInspectable-IBDesignable.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		22FC6426200DFA020077A46E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -122,12 +120,19 @@
 			path = ReusableCustomView;
 			sourceTree = "<group>";
 		};
+		22D68AD52015D65A0080EB3E /* ReusableButtonStack */ = {
+			isa = PBXGroup;
+			children = (
+				22D68AD72015DF9C0080EB3E /* ReusableButtonStackView.swift */,
+				22D68AD62015DF9C0080EB3E /* ReusableButtonStackView.xib */,
+			);
+			path = ReusableButtonStack;
+			sourceTree = "<group>";
+		};
 		22F78D6C2011D9C800D0CE69 /* XibViewLoad */ = {
 			isa = PBXGroup;
 			children = (
 				22F78D6D2011D9E200D0CE69 /* XibViewLoad.swift */,
-				22D017EA2013ED2D004A95CE /* SUP.swift */,
-				22D017EC2013ED38004A95CE /* SUP.xib */,
 			);
 			path = XibViewLoad;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 		22FC6425200DFA020077A46E /* IBInspectable-IBDesignable */ = {
 			isa = PBXGroup;
 			children = (
+				22D68AD52015D65A0080EB3E /* ReusableButtonStack */,
 				2235F45B2014BA2E0061CBB9 /* Protocols */,
 				228C853A201221860046FC15 /* ChangesViewInXib */,
 				229001DF20122092005B547A /* ReusableCustomView */,
@@ -164,7 +170,6 @@
 				22FC642D200DFA020077A46E /* Assets.xcassets */,
 				22FC642F200DFA020077A46E /* LaunchScreen.storyboard */,
 				22FC6432200DFA020077A46E /* Info.plist */,
-				225204DA2010F5C9005885CF /* CardViewImplement.xib */,
 				22D017EF2013FFE0004A95CE /* MainViewController.swift */,
 				22D017F02013FFE0004A95CE /* MainViewController.xib */,
 				2235F45E2014C3390061CBB9 /* Utils.swift */,
@@ -297,12 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D017ED2013ED38004A95CE /* SUP.xib in Resources */,
+				22D68AD82015DF9C0080EB3E /* ReusableButtonStackView.xib in Resources */,
 				22FC6431200DFA020077A46E /* LaunchScreen.storyboard in Resources */,
 				22FC642E200DFA020077A46E /* Assets.xcassets in Resources */,
 				22D017F22013FFE0004A95CE /* MainViewController.xib in Resources */,
 				225204D92010ED67005885CF /* ReusableCardView.xib in Resources */,
-				225204DB2010F5C9005885CF /* CardViewImplement.xib in Resources */,
 				22FC642C200DFA020077A46E /* Main.storyboard in Resources */,
 				228C853C201221E10046FC15 /* CustomView.xib in Resources */,
 			);
@@ -329,12 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22D017EB2013ED2D004A95CE /* SUP.swift in Sources */,
 				22FC6455200DFA340077A46E /* CustomView.swift in Sources */,
 				225204D72010ED53005885CF /* ReusableCardView.swift in Sources */,
 				22D017F12013FFE0004A95CE /* MainViewController.swift in Sources */,
 				22F78D6E2011D9E200D0CE69 /* XibViewLoad.swift in Sources */,
 				2235F45D2014BA3F0061CBB9 /* LoadViewProtocol.swift in Sources */,
+				22D68AD92015DF9C0080EB3E /* ReusableButtonStackView.swift in Sources */,
 				22FC6427200DFA020077A46E /* AppDelegate.swift in Sources */,
 				2235F45F2014C3390061CBB9 /* Utils.swift in Sources */,
 			);
